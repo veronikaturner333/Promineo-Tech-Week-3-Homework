@@ -1,0 +1,22 @@
+body { /*All copy in the page body should be Georgia or a backup font*/
+    font-family: 'Georgia', 'Times New Roman', 'Times', serif;
+  }
+
+/*When hovering over a navbar link, it should turn burgundy*/
+#navbarNav a:hover{
+    color: #800020;
+}
+
+/*When on the page corresponding to a navbar link, it should be burgundy*/
+#navbarNav .active {
+    color: #800020
+}
+
+.pt-5{
+    margin-top: 40px;
+}
+
+/*Table text should be a deep gray*/
+.table{
+    color:rgb(92, 92, 92);
+}

@@ -1,0 +1,145 @@
+<!-- Assignment 3: Create a new website using HTML and Bootstrap.
+The website must include the following:
+At least 2 pages.
+A Bootstrap navbar, table, and form.
+Bootstrap grid used throughout to format elements
+Elements should stack vertically when the window is small-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS & Custom CSS linking-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="global.css">
+    <title>English Tea House</title>
+  </head>
+
+  <body>
+    <!-- Navbar remains fixed to the top while scrolling down the page-->
+    <!-- When screen is small, navbar becomes hamburger menu-->
+    <nav class = "navbar fixed-top navbar-expand-sm navbar-light bg-light">
+      <!-- container contains instead of content taking up full width of page -->
+      <div class="container">
+      <!-- Site logo that links to home page -->
+      <a
+        href="index.html"
+        class="navbar-brand mb-0 h1">
+        <img
+        class="d-line-block align-top"
+        src="images/English-Tea-House-Logo.svg"
+        alt="English Tea House Logo"
+        width="220"/>
+      </a>
+      <!-- Hamburger icon that can be toggled to expand into navigation menu at small screen -->
+      <button
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        class="navbar-toggler"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"> <!-- when hovering, shows the button's function -->
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse"
+      id="navbarNav">
+      <!-- Navbar items made up of unordered list -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            Menu
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link
+          dropdown-toggle"
+          id="navbarDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false">
+            Events
+          </a>
+          <!-- Navbar item with dropdown menu when you click it -->
+          <ul class="dropdown-menu"
+          aria-labelledby="navbarDropdown">
+            <li><a href="#"
+            class="dropdown-item">Public</a></li>
+            <li><a href="#"
+            class="dropdown-item">Private</a></li>
+          </ul>
+        </li>
+        <!-- Link to Mailing List page -->
+        <li class="nav-item">
+          <a href="mailing-list.html" class="nav-link">
+            Mailing List
+          </a>
+        </li>
+      </ul>
+      </div>
+    </div>
+</nav>
+
+<!-- Welcome banner with background image, items aligned with flexbox -->
+<div class="bg-image d-flex flex-column p-5 text-center shadow-1-strong text-white">
+    <!--Using padding (p) to give content space -->
+    <h1 class="pt-5">Welcome!</h1>
+    <p class="p-2">
+        Come enjoy a cup of tea in a pleasant atmosphere.
+    </p>
+</div>
+
+<!----- Image With general information ----->
+<div class="container mt-4 mb-5">
+    <!-- We first create a row and then break the row up into two equal columns -->
+    <div class="row p-1">
+        <!-- Columns stack at a small viewport -->
+        <div class="col-sm-6">
+        <img src="images/bakedgoods.jpg" class="img-fluid" alt="baked goods"/>
+        </div>
+        <div class="col-sm-6">
+        <h2 class="pt-3">Lorem Impsum</h1>
+        <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <a href="#" class="btn btn-dark btn-lg">View Menu</a>
+        </div>
+    </div>
+    </div>
+</div>
+
+<!----- Table that lists hours of operation ----->
+<h2 class="container">Hours</h1>
+<table class="table table-bordered container mb-5">
+    <thead>
+      <tr>
+        <th scope="col">Day</th>
+        <th scope="col">Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Tuesday - Thursday</td>
+        <td>10:00 am - 7:00 pm</td>
+      </tr>
+      <tr>
+        <td>Friday - Sunday</td>
+        <td>8:00 am - 7:00 pm</td>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td>Closed</td>
+      </tr>
+    </tbody>
+  </table>
+
+<!----- Link to JS for site animations ----->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

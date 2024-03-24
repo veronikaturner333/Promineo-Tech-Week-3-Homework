@@ -1,0 +1,24 @@
+.bg-image{
+    background-image: url('images/sitebanner.jpg');
+    height: 50vh; /*The image takes up half the viewport height*/
+    background-repeat: no-repeat;
+    background-size: cover; /*The image covers the entire space*/
+    background-position: center; /*Center the image*/
+    overflow: hidden; /*Make sure there is no image overflow*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    background-color: #2C604B;
+}
+
+/*h2s on the home page should all be burgundy*/
+h2{
+    color: #800020;
+}
+
+/*Body copy to the right side of the image should be dark gray*/
+#description{
+    color:rgb(92, 92, 92);
+}

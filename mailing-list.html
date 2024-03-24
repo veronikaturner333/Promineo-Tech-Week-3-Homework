@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS & Custom CSS linking-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="mailing-list.css">
+    <link rel="stylesheet" href="global.css">
+    <title>Join our Mailing List</title>
+  </head>
+
+  <body>
+    <!-- Navbar remains fixed to the top while scrolling down the page-->
+    <!-- When screen is small, navbar becomes hamburger menu-->
+    <nav class = "navbar fixed-top navbar-expand-sm navbar-light bg-light">
+      <!-- container contains instead of content taking up full width of page -->
+      <div class="container">
+      <!-- Site logo that links to home page -->
+      <a
+        href="index.html"
+        class="navbar-brand mb-0 h1">
+        <img
+        class="d-line-block align-top"
+        src="images/English-Tea-House-Logo.svg"
+        alt="English Tea House Logo"
+        width="220"/>
+      </a>
+      <!-- Hamburger icon that can be toggled to expand into navigation menu at small screen -->
+      <button
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        class="navbar-toggler"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"> <!-- when hovering, shows the button's function -->
+          <span class="navbar-toggler-icon"></span>      
+      </button>
+
+      <div class="collapse navbar-collapse"
+      id="navbarNav">
+      <!-- Navbar items made up of unordered list -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            Menu
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link
+          dropdown-toggle"
+          id="navbarDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false">
+            Events
+          </a>
+          <ul class="dropdown-menu"
+          aria-labelledby="navbarDropdown">
+            <li><a href="#"
+            class="dropdown-item">Public</a></li>
+            <li><a href="#"
+            class="dropdown-item">Private</a></li>
+          </ul>
+        </li>
+        <!-- Mailing List page link is set to another color since it is active -->
+        <li class="nav-item active">
+          <a href="mailing-list.html" class="nav-link active">
+            Mailing List
+          </a>
+        </li>
+      </ul>
+      </div>
+    </div>
+</nav>
+
+
+
+<!-- Banner background image, text and forms stacked in rows -->
+<div class="bg-image p-5 text-center shadow-1-strong text-white">
+    <div class="row">
+        <h1 class="pt-5">Join Our Mailing List!</h1>
+    </div>
+    <div class="row">
+        <p class="p-2">
+            Enter your information below to receive discounts and event updates.
+        </p>
+    </div>
+        <!-- Input fields to enter your name and email -->  
+        <!-- 2 columns take up 5/12 each and the button column takes up 1/6th -->
+        <div class="row">
+            <div class="col-sm-5 mt-1">
+                <input type="text" class="form-control" placeholder="Enter your name">
+            </div>
+            <div class="col-sm-5 mt-1">
+                <input type="text" class="form-control" placeholder="Enter your Email">
+            </div>
+            <div class="col-sm-2 mt-1">
+                <button type="submit" class="btn btn-light">Enter</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!----- Link to JS for site animations ----->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

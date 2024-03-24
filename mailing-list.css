@@ -1,0 +1,10 @@
+.bg-image{
+    background-image: url('images/mailbanner.jpg');
+    height: 100vh; /*The image takes up the entire viewport height*/
+    background-repeat: no-repeat;
+    background-size: cover; /*The image covers the entire space*/
+    background-position: center; /*Center the image*/
+    overflow: hidden; /*Make sure there is no image overflow*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
